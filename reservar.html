@@ -4,7 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Reservar</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <script language="javascript" type="text/javascript">
 // <![CDATA[
 
@@ -16,19 +18,19 @@
     </script>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
-        Reservar Estacionamiento<br />
-        <asp:Label ID="Distrito" runat="server" Text="Distrito"></asp:Label>
-   
-        <br />
-        <asp:DropDownList ID="Distrito2" runat="server">
+    <center><h1> Reserva de Estacionamiento </h1></center>
+    <hr />
+
+      <div class="col-md-6 col-md-offset-3">
+          <form id="form1" runat="server">
+             <div class="form-group">
+                <asp:Label ID="Distrito" runat="server" Text="Distrito"></asp:Label>  <br /> 
+                 <asp:DropDownList ID="Distrito2" runat="server">
                         <asp:ListItem Selected="True">Seleccionar Pais</asp:ListItem>
                         <asp:ListItem>San isidro</asp:ListItem>
                         <asp:ListItem>La Molina</asp:ListItem>
-                       
-                    </asp:DropDownList>
+                 </asp:DropDownList>
+             </div>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
          ControlToValidate="Distrito2" ErrorMessage="Debe seleccionar un Distrito" 
          ForeColor="Red" InitialValue="Seleccione un Pais"></asp:RequiredFieldValidator>
