@@ -310,7 +310,9 @@
 		<div class="pf-fullwidth clearfix"><div class="wpb_column vc_column_container col-lg-12 col-md-12"><div class="wpb_wrapper">        <div class="pf-container psearchdraggable"><div class="pf-row"><div class="col-lg-12">
 
                 <div id="pfsearch-draggable" class="pfsearch-draggable-window ui-widget-content" style="left:15px">
+
                     <div class="pfsearch-header">
+
           	<ul class="pftogglemenulist clearfix">
             	<li class="pftoggle-move" title="Drag this window." ><i class="pfadmicon-glyph-692"></i></li>
                 <li class="pftoggle-search" data-pf-icon1="pfadmicon-glyph-640" data-pf-icon2="pfadmicon-glyph-639" data-pf-content="search" title="Search window." ><i class="pfadmicon-glyph-640"></i></li>
@@ -325,7 +327,36 @@
 	            </ul>
 	            <a class="button pfsearch-err-button">CLOSE</a>
 	          </div>
-	          <div id="field_listingtype_main"><div class="pftitlefield">Status:</div><label for="field_listingtype" class="lbl-ui select"><select  id="field_listingtype" name="field_listingtype" >	<option></option>	<option value="3">For Rent</option>	<option value="2" selected>For Sale</option></select></label></div><div id="field_itemtype_main"><div class="pftitlefield">Type:</div><label for="field_itemtype" class="lbl-ui select"><select  id="field_itemtype" name="field_itemtype" >	<option></option><optgroup label="Commercial">	<option value="4">Commercial (All)</option>	<option value="6">Office</option>	<option value="7">Shop</option></optgroup><optgroup label="Residential">	<option value="5">Residential (All)</option>	<option value="8">Apartment</option>	<option value="9">Condominium</option>	<option value="10">Villa</option></optgroup></select></label></div><div id="field_location_main"><div class="pftitlefield">Location:</div><label for="field_location" class="lbl-ui select"><select  id="field_location" name="field_location" >	<option></option><optgroup label="Los Angeles">	<option value="15">Los Angeles (All)</option>	<option value="17">Long Beach</option>	<option value="16">Torrance</option></optgroup><optgroup label="New York">	<option value="18">New York (All)</option></optgroup><optgroup label="San Francisco">	<option value="11">San Francisco (All)</option>	<option value="12">Berkeley</option>	<option value="37">Daly City</option>	<option value="38">Mill Valley</option>	<option value="13">Oakland</option></optgroup></select></label></div><div class="row"><div class="col6 first"> <div id="field_beds_search_main"><label for="field_beds_search-view" class="pfrangelabel">Min Beds:</label>
+	          <div id="field_listingtype_main"><div class="pftitlefield"> Distrito:</div>
+	          <label for="field_listingtype" class="lbl-ui select"><select  id="field_listingtype" name="field_listingtype" >	
+	          	<option></option>	
+
+					          <option value="3">San Isidro</option>
+					          <option value="2" selected>La Molina</option>
+	      			</select></label></div>
+
+	      <div id="field_itemtype_main"><div class="pftitlefield">Estacionamientos:</div>
+	      <label for="field_itemtype" class="lbl-ui select"><select  id="field_itemtype" name="field_itemtype" >	<option></option>
+	      	<optgroup label="Sur">	
+	      			<option value="4">Los Domos</option>
+	      			<option value="6">Los Jaminez</option>	
+	      			<option value="7">Playa Tito</option>
+	      			<option value="8">Flora</option>	
+	      			<option value="9">Fontana</option>
+
+	      		</optgroup>
+	      		<optgroup label="Norte">
+	      			<option value="10">La Laguna</option>	
+	      			<option value="11">Sause</option>	
+	      			<option value="12">JoseMaria</option>	
+	      			<option value="13">Villa</option>
+	      		</optgroup>
+
+
+	      		</select></label></div>
+
+
+	      		<div id="field_location_main"><div class="pftitlefield">Location:</div><label for="field_location" class="lbl-ui select"><select  id="field_location" name="field_location" >	<option></option><optgroup label="Los Angeles">	<option value="15">Los Angeles (All)</option>	<option value="17">Long Beach</option>	<option value="16">Torrance</option></optgroup><optgroup label="New York">	<option value="18">New York (All)</option></optgroup><optgroup label="San Francisco">	<option value="11">San Francisco (All)</option>	<option value="12">Berkeley</option>	<option value="37">Daly City</option>	<option value="38">Mill Valley</option>	<option value="13">Oakland</option></optgroup></select></label></div><div class="row"><div class="col6 first"> <div id="field_beds_search_main"><label for="field_beds_search-view" class="pfrangelabel">Min Beds:</label>
 															<input type="text" id="field_beds_search-view" class="slider-input" style="width:26px" disabled><input name="field_beds_search" id="field_beds_search-view2" type="hidden" class="pfignorevalidation" value=""> <div class="slider-wrapper">
 																<div id="field_beds_search"></div>  
 															</div></div></div><div class="col6 last"> <div id="field_baths_search_main"><label for="field_baths_search-view" class="pfrangelabel">Min Baths:</label>
