@@ -1,19 +1,16 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Reservar.aspx.cs" Inherits="_Default" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="nada.aspx.cs" Inherits="nada" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <title>Reservar</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <script language="javascript" type="text/javascript">
 // <![CDATA[
-
             function Reset1_onclick() {
-
             }
-
 // ]]>
     </script>
 </head>
@@ -38,13 +35,13 @@
 
               <div class="col-md-6 col-md-offset-3">
                 <asp:Label ID="Estacionamiento" runat="server" Text="Estacionamiento"></asp:Label> <br /> 
-                  <asp:DropDownList ID="Estacionamiento" runat="server">
+                  <asp:DropDownList ID="Estacionamiento2" runat="server">
                         <asp:ListItem Selected="True">Seleccionar Pais</asp:ListItem>
                         <asp:ListItem>fontana</asp:ListItem>
                         <asp:ListItem>Flora</asp:ListItem>                                     
                   </asp:DropDownList>
                   <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                        ControlToValidate="Estacionamiento" ErrorMessage="Debe seleccionar Servicio " 
+                        ControlToValidate="Estacionamiento2" ErrorMessage="Debe seleccionar Servicio " 
                         ForeColor="Red" InitialValue="Seleccione un Pais">
                    </asp:RequiredFieldValidator>
               </div>
@@ -60,7 +57,7 @@
 
                 <div>
                   <asp:Button ID="Button1" class="btn btn-default" runat="server" Text="Reservar" onclick="Button1_Click" />
-                    <input id="Reset1" type="reset" class="btn btn-default" value="Borrar" onclick="return Reset1_onclick()" /></td>
+                    
                 </div>
               </div>
             </form>
