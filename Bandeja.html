@@ -1,0 +1,131 @@
+<html>
+<head>
+	<title>Bandeja</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ <link href="css/navbar.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet">
+
+    
+</head>
+<body>
+	<nav class="navbar-inverse">
+  <div class="container-fluid">
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a  class="navbar-brand" href="#">Home</a></li>
+       <li><a  class="navbar-brand" href="ListaReservas.html">Lista de Reservas</a></li>
+       <li><a  class="navbar-brand" href="Reportes.html">Reportes</a></li>
+       <li><a  class="navbar-brand" href="bandeja.html">Bandeja de Entrada</a></li>
+        <li><a  class="navbar-brand" href="index.html">Cerrar Sesion</a></li>    
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<form>
+			<div class="panel-heading">
+			<H2 >Bandeja de Entrada</H2></div>	
+			<div class="panel panel-warning">
+			   <table class="table">
+						<thead>
+						<tr>
+						  <th>CORREO</th>
+						  <th>FECHA</th>
+						  <th>ACCION</th>
+						  
+						  
+						 </tr>
+						</thead>
+						<tbody>
+
+							<tr>
+						  <td>GARAGES SAC</td>
+						  <td>12/08/2015</td>
+						  <td>
+
+							<!-- Button trigger modal -->
+
+							<button type="button" style="color:blue" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">Ver</button>
+						  	<button type="button"   style="color:red" class="btn btn-default btn-sm"> Eliminar</button>
+						  </td>
+
+						  	<tr>
+						  <td>GARAGES JUANITO</td>
+						  <td>14/07/2015</td>
+						  <td>
+
+						<button type="button" style="color:blue" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">Ver</button>
+						  	<button type="button"   style="color:red" class="btn btn-default btn-sm"> Eliminar</button>
+						  </td>
+
+						  	<tr>
+						  <td>GARAGES CLINT</td>
+						  <td>13/07/2015</td>
+						  <td>
+						  	<button type="button" style="color:blue" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">Ver</button>
+						  	<button type="button"   style="color:red" class="btn btn-default btn-sm"> Eliminar</button>
+						  </td>
+						
+					
+				</table>
+</div>
+<footer> <CENTER> Derechos reservados a DevCode </CENTER></footer>
+
+				<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">CORREO</h4>
+      </div>
+      <div class="modal-body">
+             <form action="Socio" method="POST">
+            <div class="col-xs-6">
+                <div class="form-group">
+                
+                    <p>ESTIMADA EMPRESA 
+                    	QUEREMOS CONTAR CON EL SERVICIO DE RESERVA SADAÑDASDAS
+                    	ASDASDASDASDASDASDASD
+                    	SDADAS
+                    	D
+                    	ASDAS</p>
+                    	<textarea name="comentarios" rows="10" cols="40">responda</textarea>
+                  
+                 <div class="form-group">
+         
+                </div>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-warning">Responder</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
+</body>
+
+</html>
