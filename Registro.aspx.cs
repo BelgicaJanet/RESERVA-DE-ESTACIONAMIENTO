@@ -16,6 +16,11 @@ public partial class Registro : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        //De no haber sesión redireccionó al login
+        if (Session["Session_user"] != null)
+        {
+            Response.Redirect("Login.aspx", true);          
+        }
     }
 
     protected void Button1_Click(object sender, EventArgs e)
@@ -26,15 +31,16 @@ public partial class Registro : System.Web.UI.Page
         string password = tb_con.Text;
         string nombres = tb_nom.Text;
         string apellidoPaterno = tb_apePat.Text;
-        string apellidMaterno = tb_apeMat.Text;
+        string apellidoMaterno = tb_apeMat.Text;
         string dni = tb_dni.Text;
         string correo = tb_cor.Text;
-        SqlCommand cmd = new SqlCommand("insert into t_cliente (usuario,clave,email) values('" + userName + "','" + password + "','" + correo + "')", con);
+        SqlCommand cmd = new SqlCommand("insert into t_cliente (nombres,apellidoPaterno,apellidoMaterno,dni,usuario,clave,email) values('" + nombres +"','"+ apellidoPaterno +"','"+ apellidoMaterno + "','"+ dni + "','" + userName + "','" + password + "','" + correo + "')", con);
         int filas = cmd.ExecuteNonQuery();
         if (filas > 1)
         {
             //TODO: Valida acá
         }
         con.Close();
+        
     }
 }

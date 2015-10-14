@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Registrar Cliente</title>
+    <title>Sistema de Estacionamiento</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
     <script type="text/javascript">
@@ -23,35 +23,37 @@
     <hr />
     <div class="col-md-6 col-md-offset-3">   
         <form id="form1" runat="server">
-            <div class="form-group">
-                <label for="tb_nom">Nombres (*)</label>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
-                    ErrorMessage="<div class='alert alert-danger' role='alert'>El nombre es obligatorio" ControlToValidate="tb_nom" Display="Dynamic"></asp:RequiredFieldValidator>
-                <asp:TextBox ID="tb_nom" CssClass="form-control" runat="server"></asp:TextBox>
-            </div>
-            <div>
-                <label for="tb_apePat">Apellido Paterno (*)</label>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" 
-                    ErrorMessage="<div class='alert alert-danger' role='alert'>El apellido paterno es obligatorio" ControlToValidate="tb_apePat" Display="Dynamic"></asp:RequiredFieldValidator>
-                <asp:TextBox ID="tb_apePat" CssClass="form-control" runat="server" />
-            </div>
+            
+         <div class="form-group">
+             <label for="tb_nom">Nombres (*)</label>
+             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
+                    ErrorMessage="<div class='alert alert-danger' role='alert'>Los nombres son obligatorios</div>" Display="Dynamic" ControlToValidate="tb_nom"></asp:RequiredFieldValidator>
+              <asp:TextBox ID="tb_nom" CssClass="form-control" runat="server"></asp:TextBox>
+         </div> 
 
-            <div>
-                <label for="tb_apeMat">Apellido Materno (*)</label>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" 
-                    ErrorMessage="<div class='alert alert-danger' role='alert'>El apellido materno es obligatorio" ControlToValidate="tb_apeMat" Display="Dynamic"></asp:RequiredFieldValidator>
-                <asp:TextBox ID="tb_apeMat" CssClass="form-control" runat="server" />
-            </div>
+          <div class="form-group">
+              <label for="tb_apePat">Apellido Paterno (*)</label>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" 
+                  ErrorMessage="<div class='alert alert-danger' role='alert'>El apellido paterno es obligatorio</div>" Display="Dynamic" ControlToValidate="tb_apePat"></asp:RequiredFieldValidator>
+              <asp:TextBox ID="tb_apePat" CssClass="form-control" runat="server"></asp:TextBox>
+          </div>
 
-            <div>
-                <label for="tb_dni">Documento de Identidad (*)</label>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" 
-                    ErrorMessage="<div class='alert alert-danger' role='alert'>El documento de identidad es obligatorio" ControlToValidate="tb_dni" Display="Dynamic"></asp:RequiredFieldValidator>
-                <asp:TextBox ID="tb_dni" CssClass="form-control" runat="server" />
-            </div>
+          <div class="form-group">
+              <label for="tb_apeMat">Apellido Materno (*)</label>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" 
+                  ErrorMessage="<div class='alert alert-danger' role='alert'>El apellido materno es obligatorio</div>" Display="Dynamic" ControlToValidate="tb_apeMat"></asp:RequiredFieldValidator>
+              <asp:TextBox ID="tb_apeMat" CssClass="form-control" runat="server"></asp:TextBox>
+          </div>
 
-            <div class="form-group">
-            <label for="tb_usu">Nombre de Usuario (*)</label>
+          <div class="form-group">
+             <label for="tb_dni">DNI (*)</label>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" 
+                  ErrorMessage="<div class='alert alert-danger' role='alert'>El dni es obligatorio</div>" Display="Dynamic" ControlToValidate="tb_dni"></asp:RequiredFieldValidator>
+             <asp:TextBox ID="tb_dni" runat="server" CssClass="form-control"></asp:TextBox>
+          </div>
+
+          <div class="form-group">
+             <label for="tb_usu">Nombre de Usuario (*)</label>
              <asp:TextBox ID="tb_usu" CssClass="form-control" runat="server"></asp:TextBox>
              <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                         ControlToValidate="tb_usu" ErrorMessage="<div class='alert alert-danger' role='alert'>El nombre de usuario es obligatorio</div>" 
