@@ -13,7 +13,10 @@ public partial class Login : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["Session_failed"] != null) {
+            loginFail.Visible = true;
+            Session.Remove("Session_failed");
+        }
     }
 
     protected void Button1_Click(object sender, EventArgs e)
@@ -40,8 +43,8 @@ public partial class Login : System.Web.UI.Page
         else
         {
             //TODO:Show error message
-            loginFail.Visible = true;
-
+            Session.Add("Session_failed",1);
+            Response.Redirect("Login.aspx", true);
         }
 
     }

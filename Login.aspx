@@ -32,7 +32,7 @@
 			    		    <!-- <input class="form-control" placeholder="E-mail" name="email" type="text"> -->
 			    		    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="<div class='alert alert-danger'><strong>Error! </strong>No deje vacìo el campo e-mail</div>" ControlToValidate="txtEmail" Display="Dynamic"></asp:RequiredFieldValidator>
 			    		    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="<div class='alert alert-danger'><strong>Error! </strong>No deje vacìo el campo clave</div>" ControlToValidate="txtPassword" Display="Dynamic"></asp:RequiredFieldValidator>
-			    		    <div class="alert alert-danger" id="loginFail" runat="server"><strong>Error! </strong>Email o clave equivocados</div>
+			    		    <div class="alert alert-danger" id="loginFail" runat="server" visible="False"><strong>Error! </strong>Email o clave equivocados</div>
                             <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
 			    		</div>
 			    		<div class="form-group">
