@@ -8,6 +8,6 @@
     <title>Sistema de Estacionamiento</title>
 </head>
 <body>
-    <h1>Bienvenido: </h1>
+    <h1>Bienvenido: <%= Session["Session_user"] %></h1> 
 </body>
 </html>
